@@ -3,37 +3,37 @@ package enums;
 import static enums.Mountain.*;
 
 public enum Course {
-    TAN_1("Eisige Allee", TAN.getName()),
-    TAN_2("Weinender Wald", TAN.getName()),
-    TAN_3("Grimmiger Hang", TAN.getName()),
-    TAN_4("Saphir See", TAN.getName()),
+    TAN_1("Eisige Allee", TAN),
+    TAN_2("Weinender Wald", TAN),
+    TAN_3("Grimmiger Hang", TAN),
+    TAN_4("Saphir See", TAN),
 
-    MON_1("Sendero Perdido", MON.getName()),
-    MON_2("Velo Glacial", MON.getName()),
-    MON_3("Cuesta Del Alba", MON.getName()),
-    MON_4("Salto Rizado", MON.getName()),
+    MON_1("Sendero Perdido", MON),
+    MON_2("Velo Glacial", MON),
+    MON_3("Cuesta Del Alba", MON),
+    MON_4("Salto Rizado", MON),
 
-    SIE_1("Barren Plateau", SIE.getName()),
-    SIE_2("Spiraling Descent", SIE.getName()),
-    SIE_3("Queens Canyon", SIE.getName()),
-    SIE_4("Crimson Pool", SIE.getName()),
+    SIE_1("Barren Plateau", SIE),
+    SIE_2("Spiraling Descent", SIE),
+    SIE_3("Queens Canyon", SIE),
+    SIE_4("Crimson Pool", SIE),
 
-    BAI_1("Hanlin", BAI.getName()),
-    BAI_2("Donggu", BAI.getName()),
-    BAI_3("Huanta", BAI.getName()),
-    BAI_4("Jingku", BAI.getName()),
+    BAI_1("Hanlin", BAI),
+    BAI_2("Donggu", BAI),
+    BAI_3("Huanta", BAI),
+    BAI_4("Jingku", BAI),
 
-    BEN_1("Isle of Tamh", BEN.getName()),
-    BEN_2("Glen Darach", BEN.getName()),
-    BEN_3("Auld Monadh", BEN.getName()),
-    BEN_4("Loch Rioghail", BEN.getName());
+    BEN_1("Isle of Tamh", BEN),
+    BEN_2("Glen Darach", BEN),
+    BEN_3("Auld Monadh", BEN),
+    BEN_4("Loch Rioghail", BEN);
 
     private final String courseName;
-    private final String mountainName;
+    private final Mountain mountain;
 
-    Course(String courseName, String mountainName) {
+    Course(String courseName, Mountain mountain) {
         this.courseName = courseName;
-        this.mountainName = mountainName;
+        this.mountain = mountain;
     }
 
     public String getCourseName() {
@@ -41,6 +41,6 @@ public enum Course {
     }
 
     public String getMountainName() {
-        return mountainName;
+        return mountain.getName();
     }
 }
