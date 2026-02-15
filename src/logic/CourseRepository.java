@@ -1,4 +1,4 @@
-package courseselector;
+package logic;
 
 import enums.Course;
 

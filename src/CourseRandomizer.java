@@ -1,4 +1,4 @@
-import courseselector.*;
+import logic.*;
 import enums.Course;
 
 import java.util.List;

@@ -1,12 +1,10 @@
-package courseselector;
+package logic;
 
 import enums.Course;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
-import static enums.Course.*;
 
 public class CourseSelector {
     private boolean allowMixed = false;
